@@ -1,0 +1,337 @@
+{
+    "tipos": [
+        {
+            "id": 1,
+            "nome": "Ações"
+        },
+        {
+            "id": 2,
+            "nome": "Fundos de Investimentos"
+        },
+        {
+            "id": 3,
+            "nome": "FIIs"
+        },
+        {
+            "id": 4,
+            "nome": "Criptomoedas"
+        },
+        {
+            "id": 5,
+            "nome": "Stocks"
+        },
+        {
+            "id": 6,
+            "nome": "Reit"
+        },
+        {
+            "id": 7,
+            "nome": "BDRs"
+        },
+        {
+            "id": 8,
+            "nome": "ETFs"
+        },
+        {
+            "id": 9,
+            "nome": "ETFs Internacionais"
+        },
+        {
+            "id": 10,
+            "nome": "Tesouro Direto"
+        },
+        {
+            "id": 11,
+            "nome": "Renda Fixa"
+        },
+        {
+            "id": 12,
+            "nome": "Outros"
+        }
+    ],
+    "ativos": [
+        {
+            "id": 1,
+            "ticker": "ITUB4",
+            "nome_empresa": "Banco Itaú",
+            "tipo_id": 1
+        },
+        {
+            "id": 2,
+            "ticker": "VALE3",
+            "nome_empresa": "Vale",
+            "tipo_id": 1
+        },
+        {
+            "id": 3,
+            "ticker": "BBSE3",
+            "nome_empresa": "BB Seguridade",
+            "tipo_id": 1
+        },
+        {
+            "id": 4,
+            "ticker": "BBAS3",
+            "nome_empresa": "Banco do Brasil",
+            "tipo_id": 1
+        },
+        {
+            "id": 5,
+            "ticker": "BPAC11",
+            "nome_empresa": "Banco BTG Pactual",
+            "tipo_id": 1
+        },
+        {
+            "id": 6,
+            "ticker": "PETR4",
+            "nome_empresa": "Petrobrás",
+            "tipo_id": 1
+        },
+        {
+            "id": 7,
+            "ticker": "ITSA4",
+            "nome_empresa": "Itaúsa",
+            "tipo_id": 1
+        },
+        {
+            "id": 8,
+            "ticker": "TAEE11",
+            "nome_empresa": "Taesa",
+            "tipo_id": 1
+        },
+        {
+            "id": 9,
+            "ticker": "CXSE3",
+            "nome_empresa": "Caixa Seguridade",
+            "tipo_id": 1
+        },
+        {
+            "id": 10,
+            "ticker": "SAPR4",
+            "nome_empresa": "Sanepar",
+            "tipo_id": 1
+        },
+        {
+            "id": 11,
+            "ticker": "BBDC4",
+            "nome_empresa": "Banco Bradesco",
+            "tipo_id": 1
+        },
+        {
+            "id": 12,
+            "ticker": "CMIG4",
+            "nome_empresa": "Cemig",
+            "tipo_id": 1
+        },
+        {
+            "id": 13,
+            "ticker": "RANI3",
+            "nome_empresa": "Irani",
+            "tipo_id": 1
+        },
+        {
+            "id": 14,
+            "ticker": "KNRI11",
+            "nome_empresa": "Kinea Renda Imobiliária",
+            "tipo_id": 3
+        },
+        {
+            "id": 15,
+            "ticker": "HGRU11",
+            "nome_empresa": "Pátria Renda Urbana",
+            "tipo_id": 3
+        },
+        {
+            "id": 16,
+            "ticker": "HGLG11",
+            "nome_empresa": "Pátria Log",
+            "tipo_id": 3
+        },
+        {
+            "id": 17,
+            "ticker": "BTCI11",
+            "nome_empresa": "Fii BTG Pactual Fundo de CRI",
+            "tipo_id": 3
+        },
+        {
+            "id": 18,
+            "ticker": "XPML11",
+            "nome_empresa": "XP Malls Fundos",
+            "tipo_id": 3
+        },
+        {
+            "id": 19,
+            "ticker": "LVBI11",
+            "nome_empresa": "VBI Logístico",
+            "tipo_id": 3
+        },
+        {
+            "id": 20,
+            "ticker": "GARE11",
+            "nome_empresa": "Guardian Real Estate",
+            "tipo_id": 3
+        },
+        {
+            "id": 21,
+            "ticker": "GGRC11",
+            "nome_empresa": "GGR COVEPI Renda Fundo de Investimento Imobiliário",
+            "tipo_id": 3
+        },
+        {
+            "id": 22,
+            "ticker": "HGBS11",
+            "nome_empresa": "HEDGE Brasil Shopping Fundo de Investimento Imobiliário",
+            "tipo_id": 3
+        },
+        {
+            "id": 23,
+            "ticker": "ALZR11",
+            "nome_empresa": "Alianza Trust Renda Imobiliaria - Fundo de Investimento Imobiliário",
+            "tipo_id": 3
+        },
+        {
+            "id": 24,
+            "ticker": "TSELIC2031",
+            "nome_empresa": "Tesouro Selic 2031",
+            "tipo_id": 10
+        },
+        {
+            "id": 25,
+            "ticker": "TIPCA+2035",
+            "nome_empresa": "Tesouro IPCA+ com Juros Semestrais 2035",
+            "tipo_id": 10
+        },
+        {
+            "id": 26,
+            "ticker": "IVVB11",
+            "nome_empresa": "ISHARES S&P 500 FDO INV COTAS FDO INDICE",
+            "tipo_id": 8
+        },
+        {
+            "id": 27,
+            "ticker": "O",
+            "nome_empresa": "REALTY INCOME CORPORATION",
+            "tipo_id": 6
+        },
+        {
+            "id": 28,
+            "ticker": "KO",
+            "nome_empresa": "Coca-cola",
+            "tipo_id": 5
+        },
+        {
+            "id": 29,
+            "ticker": "VEA",
+            "nome_empresa": "Vanguard FTSE Developed Markets Index Fund ETF Shares",
+            "tipo_id": 9
+        },
+        {
+            "id": 30,
+            "ticker": "SCHD",
+            "nome_empresa": "Schwab US Dividend Equity ETF",
+            "tipo_id": 9
+        },
+        {
+            "id": 31,
+            "ticker": "SCHG",
+            "nome_empresa": "Schwab U.S. Large-Cap Growth ETF",
+            "tipo_id": 9
+        },
+        {
+            "id": 32,
+            "ticker": "TFLO",
+            "nome_empresa": "iShares Treasury Floating Rate Bond ETF",
+            "tipo_id": 9
+        },
+        {
+            "id": 33,
+            "ticker": "XLRE",
+            "nome_empresa": "Real Estate Select Sector SPDR Fund",
+            "tipo_id": 9
+        },
+        {
+            "id": 34,
+            "ticker": "IAU",
+            "nome_empresa": "iShares Gold Trust",
+            "tipo_id": 9
+        },
+        {
+            "id": 35,
+            "ticker": "SGOV",
+            "nome_empresa": "iShares 0-3 Month Treasury Bond ETF",
+            "tipo_id": 9
+        },
+        {
+            "id": 36,
+            "ticker": "NubankCDI",
+            "nome_empresa": "NUBANK - Pós-Fixado - 100% CDI",
+            "tipo_id": 11
+        },
+        {
+            "id": 37,
+            "ticker": "NuB-Turbo",
+            "nome_empresa": "NUBANK - Pós-Fixado - 115% CDI",
+            "tipo_id": 11
+        }
+    ],
+    "instituicoes": [
+        {
+            "id": 1,
+            "nome": "Banco do Brasil"
+        },
+        {
+            "id": 2,
+            "nome": "Caixa Econômica Federal"
+        },
+        {
+            "id": 3,
+            "nome": "Nubank"
+        },
+        {
+            "id": 4,
+            "nome": "Mercado Pago"
+        }
+    ],
+    "contas": [
+        {
+            "id": 1,
+            "nome": "BB Silva Jr",
+            "instituicao": 1,
+            "tipo": "CORRENTE",
+            "saldo_inicial": "2500.00",
+            "saldo_atual": "0.00"
+        },
+        {
+            "id": 2,
+            "nome": "NB Silva Junior",
+            "instituicao": 3,
+            "tipo": "INVESTIMENTO",
+            "saldo_inicial": "1000.00",
+            "saldo_atual": "0.00"
+        },
+        {
+            "id": 3,
+            "nome": "NB Selma",
+            "instituicao": 3,
+            "tipo": "INVESTIMENTO",
+            "saldo_inicial": "200.00",
+            "saldo_atual": "0.00"
+        },
+        {
+            "id": 4,
+            "nome": "CEF Silva Junior",
+            "instituicao": 2,
+            "tipo": "POUPANCA",
+            "saldo_inicial": "3000.00",
+            "saldo_atual": "0.00"
+        },
+        {
+            "id": 5,
+            "nome": "MP Silva Junior",
+            "instituicao": 4,
+            "tipo": "INVESTIMENTO",
+            "saldo_inicial": "5000.00",
+            "saldo_atual": "0.00"
+        }
+    ],
+    "lancamentos": []
+}
