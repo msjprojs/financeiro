@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-python.python",        // Suporte básico a Python
+        "ms-python.vscode-pylance", // IntelliSense (autocompletar inteligente)
+        "ms-python.debugpy",       // Debugger (necessário para o launch.json funcionar)
+        "batisteo.vscode-django",   // Snippets e destaque de sintaxe para Templates/Models
+        "charliermarsh.ruff"       // Linter/Formatter extremamente rápido (combina bem com o uv) - extensão "Ruff"
+    ]
+}
