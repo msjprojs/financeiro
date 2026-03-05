@@ -1,8 +1,9 @@
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from .models import Ativo, Conta, Instituicao, Lancamento, MovimentacaoConta, TipoAtivo
-from .serializers import AtivoSerializer, ContaSerializer, InstituicaoSerializer, LancamentoSerializer, MovimentacaoContaSerializer, TipoAtivoSerializer
+from .models import Ativo, Conta, Instituicao, Lancamento, MovimentacaoConta, TipoAtivo, Transferencia, TransacaoFinanceira
+from .serializers import AtivoSerializer, ContaSerializer, InstituicaoSerializer, LancamentoSerializer, MovimentacaoContaSerializer, TipoAtivoSerializer, TransferenciaSerializer, TransacaoFinanceiraSerializer
+
 
 
 class InstituicaoViewSet(viewsets.ModelViewSet):
@@ -28,4 +29,12 @@ class LancamentoViewSet(viewsets.ModelViewSet):
 class MovimentacaoContaViewSet(viewsets.ModelViewSet):
     queryset = MovimentacaoConta.objects.all()
     serializer_class = MovimentacaoContaSerializer
+
+class TransferenciaViewSet(viewsets.ModelViewSet):
+    queryset = Transferencia.objects.all()
+    serializer_class = TransferenciaSerializer
+
+class TransferenciaFinanceiraViewSet(viewsets.ModelViewSet):
+    queryset = TransacaoFinanceira.objects.all()
+    serializer_class = TransacaoFinanceiraSerializer
     

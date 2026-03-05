@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Ativo, Conta, Instituicao, Lancamento, MovimentacaoConta, TipoAtivo
+from .models import Ativo, Conta, Instituicao, Lancamento, MovimentacaoConta, TipoAtivo, Transferencia, TransacaoFinanceira
 
 
 class InstituicaoSerializer(serializers.ModelSerializer):
@@ -36,4 +36,16 @@ class LancamentoSerializer(serializers.ModelSerializer):
 class MovimentacaoContaSerializer(serializers.ModelSerializer):
     class Meta:
         model = MovimentacaoConta
+        fields = "__all__"
+
+
+class TransferenciaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Transferencia
+        fields = "__all__"
+
+
+class TransacaoFinanceiraSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransacaoFinanceira
         fields = "__all__"
