@@ -298,7 +298,7 @@
             "instituicao": 1,
             "tipo": "CORRENTE",
             "saldo_inicial": "2500.00",
-            "saldo_atual": "0.00"
+            "saldo_atual": "-1800.00"
         },
         {
             "id": 2,
@@ -306,7 +306,7 @@
             "instituicao": 3,
             "tipo": "INVESTIMENTO",
             "saldo_inicial": "1000.00",
-            "saldo_atual": "0.00"
+            "saldo_atual": "1684.12"
         },
         {
             "id": 3,
@@ -322,7 +322,7 @@
             "instituicao": 2,
             "tipo": "POUPANCA",
             "saldo_inicial": "3000.00",
-            "saldo_atual": "0.00"
+            "saldo_atual": "-2897.61"
         },
         {
             "id": 5,
@@ -330,8 +330,59 @@
             "instituicao": 4,
             "tipo": "INVESTIMENTO",
             "saldo_inicial": "5000.00",
-            "saldo_atual": "0.00"
+            "saldo_atual": "2897.61"
         }
     ],
-    "lancamentos": []
+    "lancamentos": [
+        {
+            "ativo_id": 5,
+            "conta_id": 2,
+            "data": "2026-03-10",
+            "quantidade": "2.0000",
+            "preco_unitario": "57.92",
+            "taxas": "0.04",
+            "tipo_operacao": "C"
+        }
+    ],
+    "movimentacoesconta": [],
+    "transacaofinanceira": [
+        {
+            "conta_id": 1,
+            "valor": "-900.00",
+            "data": "2025-09-29",
+            "descricao": "Transf. para NB Silva Junior (Nubank)"
+        },
+        {
+            "conta_id": 2,
+            "valor": "900.00",
+            "data": "2025-09-29",
+            "descricao": "Transf. de BB Silva Jr (Banco do Brasil)"
+        },
+        {
+            "conta_id": 4,
+            "valor": "-2897.61",
+            "data": "2026-03-12",
+            "descricao": "Transf. para MP Silva Junior (Mercado Pago)"
+        },
+        {
+            "conta_id": 5,
+            "valor": "2897.61",
+            "data": "2026-03-12",
+            "descricao": "Transf. de CEF Silva Junior (Caixa Econômica Federal)"
+        }
+    ],
+    "transferencia": [
+        {
+            "conta_origem_id": 1,
+            "conta_destino_id": 2,
+            "valor": "900.00",
+            "data": "2025-09-29"
+        },
+        {
+            "conta_origem_id": 4,
+            "conta_destino_id": 5,
+            "valor": "2897.61",
+            "data": "2026-03-12"
+        }
+    ]
 }

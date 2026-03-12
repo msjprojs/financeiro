@@ -96,6 +96,9 @@ class Ativo(models.Model):
     nome_empresa = models.CharField(max_length=100)
     tipo = models.ForeignKey('TipoAtivo', on_delete=models.PROTECT)
 
+    def __str__(self):
+        return self.ticker
+
 class Lancamento(models.Model):
     TIPO_OPERACAO = [('C', 'Compra'), ('V', 'Venda'), ('D', 'Dividendo')]
     ativo = models.ForeignKey(Ativo, on_delete=models.CASCADE)
@@ -118,6 +121,11 @@ class Lancamento(models.Model):
                 valor_final = self.preco_unitario 
             
             Conta.objects.filter(pk=self.conta_id).update(saldo_atual=F('saldo_atual') + valor_final)
+
+    def __str__(self):
+        #return f"{self.ativo} - {self.conta}"
+        return f"{self.ativo.ticker} {self.tipo_operacao} {self.quantidade} em {self.data}"
+
 
 class TransacaoFinanceira(models.Model):
     # Identificadores

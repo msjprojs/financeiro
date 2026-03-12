@@ -7,7 +7,7 @@ from decimal import Decimal
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 django.setup()
 
-from investimentos.models import TipoAtivo, Ativo, Lancamento, Instituicao, Conta
+from investimentos.models import TipoAtivo, Ativo, Lancamento, Instituicao, Conta, MovimentacaoConta, TransacaoFinanceira, Transferencia
 
 
 def exportar():
@@ -16,7 +16,10 @@ def exportar():
         'ativos': list(Ativo.objects.values('id', 'ticker', 'nome_empresa', 'tipo_id')),
         'instituicoes': list(Instituicao.objects.values('id', 'nome')),
         'contas': [],
-        'lancamentos': []
+        'lancamentos': [],
+        'movimentacoesconta': [],
+        'transacaofinanceira': [],
+        'transferencia': []
     }
 
     # Contas possuem Decimais, que o JSON nativo não aceita. 
@@ -33,14 +36,39 @@ def exportar():
 
     # Lancamentos possuem Decimais e Datas, que o JSON nativo não aceita. 
     # Precisamos converter para string.
-    for l in Lancamento.objects.all():
+    for d in Lancamento.objects.all():
         dados['lancamentos'].append({
-            'ativo_id': l.ativo_id,
-            'data': str(l.data),
-            'quantidade': str(l.quantidade),
-            'preco_unitario': str(l.preco_unitario),
-            'taxas': str(l.taxas),
-            'tipo_operacao': l.tipo_operacao
+            'ativo_id': d.ativo_id,
+            'conta_id': d.conta_id,
+            'data': str(d.data),
+            'quantidade': str(d.quantidade),
+            'preco_unitario': str(d.preco_unitario),
+            'taxas': str(d.taxas),
+            'tipo_operacao': d.tipo_operacao
+        })
+
+    for m in MovimentacaoConta.objects.all():   
+        dados['movimentacoesconta'].append({
+            'conta_id': m.conta_id,
+            'data': str(m.data),
+            'valor': str(m.valor),
+            'tipo': m.tipo
+        })
+
+    for t in TransacaoFinanceira.objects.all():
+        dados['transacaofinanceira'].append({
+            'conta_id': t.conta_id,
+            'valor': str(t.valor),
+            'data': str(t.data),
+            'descricao': t.descricao
+        })
+
+    for f in Transferencia.objects.all():
+        dados['transferencia'].append({
+            'conta_origem_id': f.conta_origem_id,
+            'conta_destino_id': f.conta_destino_id,
+            'valor': str(f.valor),
+            'data': str(f.data)
         })
 
     with open('backup_investimentos.json', 'w', encoding='utf-8') as f:
